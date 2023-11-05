@@ -5,7 +5,6 @@ import { UserProivder } from "./src/context/user.context";
 import { Login } from "./src/container/login.screen";
 import { Home } from "./src/container/home.screen";
 import { ListsProvider } from "./src/context/lists.context";
-import { ManageTasks } from "./src/container/manage-tasks.screen";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -22,11 +21,6 @@ export default function App() {
             <Stack.Screen
               name="todos"
               component={Home}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="manage"
-              component={ManageTasks}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>

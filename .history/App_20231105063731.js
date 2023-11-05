@@ -26,7 +26,7 @@ export default function App() {
             />
             <Stack.Screen
               name="manage"
-              component={ManageTasks}
+              component={Home}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>
