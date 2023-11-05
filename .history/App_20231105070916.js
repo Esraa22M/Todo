@@ -27,6 +27,7 @@ export default function App() {
             <Stack.Screen
               name="manage"
               component={ManageTasks}
+              options={{ headerShown: false }}
               options={({ route }) => ({ title: route.params.name })}
             />
           </Stack.Navigator>

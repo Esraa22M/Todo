@@ -3,7 +3,7 @@ import { Text, Pressable, View } from "react-native";
 import { listItemStyle } from "../../../styles/home/tasks/list-item.styles";
 export const renderListItem = (navigation, itemData) => {
   handlePress = () =>
-    navigation.navigate("manage", { name: itemData.item.title });
+    navigation.navigate("manage", { name: "Custom profile header" });
   return (
     <Pressable onPress={handlePress}>
       <View style={listItemStyle.wrapper}>
